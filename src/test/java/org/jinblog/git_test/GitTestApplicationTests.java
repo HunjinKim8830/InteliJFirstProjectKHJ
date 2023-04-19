@@ -1,4 +1,4 @@
-package com.example.git_test;
+package org.jinblog.git_test;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

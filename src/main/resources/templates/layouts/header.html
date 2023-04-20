@@ -3,7 +3,7 @@
       xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
-      layout:decorate="~{content/index}">
+      layout:decorate="~{content}">
 <head>
   <title>blog header</title>
 </head>
@@ -12,7 +12,9 @@
 <div id="header">
 
   <div class="top">
-
+    <div id="moveMain">
+      <a th:href="@{/home}"><h1>>> Main</h1></a>
+    </div>
     <!-- Logo -->
     <div id="logo">
       <span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
@@ -38,8 +40,7 @@
     <ul class="icons">
       <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
       <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-      <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-      <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+      <li><a href="https://github.com/HunjinKim8830/InteliJFirstProjectKHJ" class="icon brands fa-github"><span class="label">Github</span></a></li>
       <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
     </ul>
 

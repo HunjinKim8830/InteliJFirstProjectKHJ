@@ -14,4 +14,9 @@ public class moveController {
         model.addAttribute("mode", "home");
         return "content/index";
     }
+
+    @GetMapping("/moveLogin")
+    public String moveLogin() {
+        return "content/login/loginForm";
+    }
 }

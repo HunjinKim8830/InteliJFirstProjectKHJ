@@ -2094,6 +2094,34 @@ input, select, textarea {
 					color: #fff;
 				}
 
+	#moveMain {
+		position: relative;
+		margin: 1.75em 1.5em 1.5em 1.5em;
+		min-height: 48px;
+		cursor: default;
+	}
+
+		#moveMain a h1{
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			color: rgba(255, 255, 255);
+			font-weight: 600;
+			text-decoration: none;
+			outline: 0;
+			border: 0;
+			-moz-transition: none;
+			-webkit-transition: none;
+			-ms-transition: none;
+			transition: none;
+		}
+
+		#moveMain a h1:hover {
+			background: rgba(0, 0, 0, 0.15);
+			color: #e27689;
+		}
+
 	#logo {
 		position: relative;
 		margin: 1.75em 1.5em 1.5em 1.5em;

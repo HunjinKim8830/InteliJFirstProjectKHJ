@@ -26,4 +26,11 @@ public class MemberEntity {
     private String name;
     @Column
     private String nickname;
+
+    public MemberEntity(String id, String name, String nickname) {
+        super();
+        this.id=id;
+        this.name=name;
+        this.nickname=nickname;
+    }
 }

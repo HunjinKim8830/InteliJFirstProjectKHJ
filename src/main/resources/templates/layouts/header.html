@@ -17,9 +17,14 @@
     </div>
     <!-- Logo -->
     <div id="logo">
-      <span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-      <h1 id="title">Hunjin Kim</h1>
-      <p>Welcome my blog!</p>
+      <a href="#" th:href="@{/moveLogin}" style="color: white;" sec:authorize="isAnonymous()">Login</a>
+      <th:block sec:authorize="isAuthenticated()">
+
+        <span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+
+        <span id="title" sec:authentication="principal.nickname"></span>님 <br>
+        <a href="#" th:href="@{/moveLogin}" style="color: white;">Logout</a>
+      </th:block>
     </div>
 
     <!-- Nav -->

@@ -14,7 +14,9 @@
   <div class="top">
     <div id="moveMain">
       <a th:href="@{/home}"><h1>>> Main</h1></a>
+      <a th:href="@{/moveAdminForm}" sec:authorize="hasAuthority('master')" style="font-size: 18px;">관리자모드</a>
     </div>
+
     <!-- Logo -->
     <div id="logo">
       <a href="#" th:href="@{/moveLogin}" style="color: white;" sec:authorize="isAnonymous()">Login</a>
@@ -22,9 +24,11 @@
 
         <span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
 
-        <span id="title" sec:authentication="principal.nickname"></span>님 <br>
-        <a href="#" th:href="@{/moveLogin}" style="color: white;">Logout</a>
+        <a href="#" th:href="@{/moveMypage}" id="title" sec:authentication="principal.nickname"></a>님 <br>
+        <a href="#" th:href="@{/moveLogin}" style="color: white; font-size: 15px;">Logout</a>
       </th:block>
+      <br>
+     <br>
     </div>
 
     <!-- Nav -->
